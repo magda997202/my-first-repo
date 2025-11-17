@@ -1,3 +1,9 @@
+/*
+* Programmer: Magda Hussein
+ * Date:       11/14/2025
+ * Program:    main
+ * Purpose:    First_struct
+ */
 #include <iostream>
 #include <string>
 #include <iomanip> // For std::setw, std::setfill, std::fixed, std::setprecision

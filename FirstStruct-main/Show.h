@@ -1,38 +1,30 @@
-//
-// YOur comments here...
-//
-
+/*
+* Programmer: Magda Hussein
+ * Date:       11/14/2025
+ * Program:    Show.h
+ * Purpose:    First_struct
+ */
 #ifndef FIRSTSTRUCT_SHOW_H
 #define FIRSTSTRUCT_SHOW_H
 
 #include <string>
 
-/**
- * @struct Show
- * @brief Holds data for a show, enforcing data hiding.
- *
- * This struct uses private members and public accessor/mutator
- * methods to control how data is accessed and modified.
- * The method implementations will be in Show.cpp.
- */
-struct Show {
+class Show {
 private:
     std::string title;
     std::string venue;
-    int showTime; // e.g., 1930 for 7:30 PM
+    int showTime;
 
 public:
-    // --- Accessors (Getters) ---
-    // These methods RETURN the value of private members
-    std::string getTitle();
-    std::string getVenue();
-    int getShowTime();
+    // Accessors
+    std::string getTitle() const;
+    std::string getVenue() const;
+    int getShowTime() const;
 
-    // --- Mutators (Setters) ---
-    // These methods SET the value of private members
-    void setTitle(std::string newTitle);
-    void setVenue(std::string newVenue);
+    // Mutators
+    void setTitle(const std::string& newTitle);
+    void setVenue(const std::string& newVenue);
     void setShowTime(int newShowTime);
 };
 
-#endif //FIRSTSTRUCT_SHOW_H
+#endif // FIRSTSTRUCT_SHOW_H
